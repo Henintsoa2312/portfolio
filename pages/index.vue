@@ -22,7 +22,7 @@ const skills = ref([
       { name: 'CSS', lottieUrl: 'https://assets8.lottiefiles.com/packages/lf20_2x0yddp5.json' },
       { name: 'JavaScript', lottieUrl: 'https://assets8.lottiefiles.com/packages/lf20_2x0yddp5.json' },
       { name: 'Vue.js', lottieUrl: 'https://assets8.lottiefiles.com/packages/lf20_2x0yddp5.json' },
-      { name: 'Nuxt.js', lottieUrl: 'https://assets8.lottiefiles.com/packages/lf20_2x0yddp5.json' },
+      { name: 'Nuxt.js', lottieUrl: 'https://lottie.host/81754933-b424-4a55-8332-231336c13559/a8a3aJ9KkS.json' },
       { name: 'React', lottieUrl: 'https://assets8.lottiefiles.com/packages/lf20_2x0yddp5.json' },
       { name: 'Tailwind CSS', lottieUrl: 'https://assets8.lottiefiles.com/packages/lf20_2x0yddp5.json' },
     ]
