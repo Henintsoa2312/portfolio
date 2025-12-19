@@ -122,13 +122,21 @@ onUnmounted(() => {
               </div>
 
               <!-- Barre de langages GitHub -->
-              <div v-if="project.languages && project.languages.length" class="w-full px-4 mt-auto">
+              <div v-if="project.languages && project.languages.length" class="w-full px-4 mt-4">
                 <div class="flex w-full h-2 rounded-full overflow-hidden bg-slate-700">
                   <div
                     v-for="lang in project.languages"
                     :key="lang.name"
                     :style="{ width: lang.percentage + '%', backgroundColor: lang.color }"
                     :title="`${lang.name}: ${lang.percentage}%`"></div>
+                </div>
+                <!-- Légende des langages -->
+                <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-3 text-xs">
+                  <div v-for="lang in project.languages" :key="lang.name + '-legend'" class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full" :style="{ backgroundColor: lang.color }"></span>
+                    <span class="text-slate-300 font-medium">{{ lang.name }}</span>
+                    <span class="text-slate-400">{{ lang.percentage }}%</span>
+                  </div>
                 </div>
               </div>
               <a 
